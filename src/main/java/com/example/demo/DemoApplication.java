@@ -8,19 +8,16 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 
-	}
-
-	@Bean
-	public CommandLineRunner commandLineRunner() {
-		return new CommandLineRunner() {
-			@Override
-			public void run(String... args) throws Exception {
-
-			}
-		};
-	}
-
+    @Bean
+    public CommandLineRunner commandLineRunner() {
+        return new CommandLineRunner() {
+            @Override
+            public void run(String... args) throws Exception {
+            }
+        };
+    }
 }
